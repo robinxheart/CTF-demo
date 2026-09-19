@@ -1255,7 +1255,7 @@ society often sees:
             </button>
 
 
-            <!-- DOWNLOADS plate.png -->
+            <!-- DOWNLOADS final_challenge.png -->
 
             <button
                 id="directDownload"
@@ -1589,7 +1589,7 @@ document
    "Direct download"
 
    Downloads:
-   plate.png
+   final_challenge.png
 ===================================================== */
 
 document
@@ -1598,10 +1598,10 @@ document
 
     try {
 
-        const response = await fetch("plate.png");
+        const response = await fetch("final_challenge.png");
 
         if (!response.ok) {
-            throw new Error("plate.png was not found");
+            throw new Error("final_challenge.png was not found");
         }
 
         const blob = await response.blob();
@@ -1613,7 +1613,7 @@ document
             document.createElement("a");
 
         link.href = objectURL;
-        link.download = "plate.png";
+        link.download = "final_challenge.png";
 
         document.body.appendChild(link);
 
@@ -1632,7 +1632,7 @@ document
         console.error(error);
 
         alert(
-            "Could not download plate.png. Make sure plate.png is in the same folder as index.html."
+            "Could not download final_challenge.png. Make sure final_challenge.png is in the same folder as index.html."
         );
     }
 
